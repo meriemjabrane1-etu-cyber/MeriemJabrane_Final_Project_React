@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './pages/home/Home';
 import Navbar from './components/Navbar';
 import ContactSection from './components/ContactSection';
+import Footer from  "./components/Footer";
 
 
 function App(props) {
@@ -12,6 +13,7 @@ function App(props) {
       
       <Home/>
       <ContactSection/>
+      <Footer/>
     </div>
   );
 }
