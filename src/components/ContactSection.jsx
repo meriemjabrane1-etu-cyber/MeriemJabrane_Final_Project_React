@@ -5,7 +5,7 @@ const ContactSection = () => {
     <div className="max-w-7xl mx-auto p-6 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         
-        //& Left Side: Map Container
+        {/* Left Side: Map Container */}
         <div className="w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-md border border-gray-200">
           <iframe
             title="Google Map"
@@ -17,7 +17,7 @@ const ContactSection = () => {
           ></iframe>
         </div>
 
-       //& Right Side: Contact Form 
+        {/* Right Side: Contact Form */}
         <div className="flex flex-col space-y-6">
           <h2 className="text-3xl font-light text-gray-800 tracking-wide">
             Send us your message
