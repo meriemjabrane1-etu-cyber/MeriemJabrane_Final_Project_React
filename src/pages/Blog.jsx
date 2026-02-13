@@ -2,7 +2,7 @@ import React from 'react';
 
 function Blog(props) {
     return (
-        <div>
+        <div className='h-200 bg-blue-100'>
             
         </div>
     );

@@ -8,6 +8,7 @@ import Features from './pages/Features';
 import ContactSection from './components/ContactSection';
 import ShopNow from './pages/ShopNow';
 import Shop from './pages/Shop';
+import Blog from './pages/Blog';
 function App() {
   return (
     <div>
@@ -17,12 +18,13 @@ function App() {
         <Route path="/Shop" element={<Shop/>} />
         <Route path="/ContactSection" element={<ContactSection/>} />
         <Route path="/Sale" element={<Sale />} />
+         <Route path="/Blog" element={<Blog />} />
         <Route path="/Features" element={<Features/>} />
         <Route path="/ShopNow" element={<ShopNow/>} />
       </Routes>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default App;
