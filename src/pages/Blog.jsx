@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Data(props) {
+function Blog(props) {
     return (
         <div>
             
@@ -8,4 +8,4 @@ function Data(props) {
     );
 }
 
-export default Data;
+export default Blog;

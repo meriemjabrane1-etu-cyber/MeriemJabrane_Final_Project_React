@@ -1,78 +1,74 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import {
+  FaFacebookF, FaTwitter, FaPinterestP, FaGooglePlusG, FaInstagram, 
+  FaRegUserCircle, FaShoppingBag 
+} from 'react-icons/fa';
 
-function Navbar(props) {
-    return (
-        <div>
-            <nav className="bg-white border-gray-200 py-2.5 dark:bg-gray-900 fixed top-0 w-screen z-10">
-                <div className="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
-                    <a href="#" className="flex items-center">
-                        //& logo
-                        {/* <img src="" className="h-6 mr-3 sm:h-9" alt="Landwind Logo" /> */}
-                        
-                    </a>
-                    <div className="flex items-center lg:order-2">
-                        <div className="hidden mt-2 mr-4 sm:inline-block">
-                            <span></span>
-                        </div>
+const Navbar = () => {
+  const location = useLocation();
 
-                        <a href="https://themesberg.com/product/tailwind-css/landing-page"
-                            className="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Download</a>
-                        <button data-collapse-toggle="mobile-menu-2" type="button"
-                            className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                            aria-controls="mobile-menu-2" aria-expanded="true">
-                            <span className="sr-only">Open main menu</span>
-                            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd"
-                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
+  const isActive = (path) => location.pathname === path;
 
-                        </button>
-                    </div>
-                    <div className="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-                        <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
-                                    aria-current="page">Home</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Shop</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Sale</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4  border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    className="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'Shop', path: '/Shop' },
+    { name: 'Sale', path: '/sale' },
+    { name: 'Features', path: '/features' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/ContactSection' },
+  ]
 
-            <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+  return (
+    <header className="w-full font-sans shadow-sm">
+
+      <div className="bg-[#e65540] text-white text-[13px] py-2 px-4 flex justify-center items-center relative">
+        <p>
+          20% off everything! <Link to="/shop" className="underline ml-1 font-medium">Shop Now</Link>
+        </p>
+        <button className="absolute right-4 hover:scale-110 transition-transform">✕</button>
+      </div>
+
+      <div className="flex justify-between items-center px-6 md:px-12 py-5 border-b border-gray-100">
+
+        <div className="flex space-x-5 text-gray-500 text-sm">
+          <a href="https://facebook.com" target="_blank" rel="noreferrer"><FaFacebookF className="hover:text-[#e65540] cursor-pointer" /></a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer"><FaTwitter className="hover:text-[#e65540] cursor-pointer" /></a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer"><FaInstagram className="hover:text-[#e65540] cursor-pointer" /></a>
         </div>
-    );
+
+        <Link to="/" className="absolute left-1/2 -translate-x-1/2 text-3xl font-black tracking-tighter text-black">
+          Fashe<span className="text-[#e65540]">.</span>
+        </Link>
+
+        <div className="flex items-center space-x-6 text-gray-500">
+          <span className="hidden lg:inline text-xs border-r pr-4 border-gray-200 uppercase">fashe@example.com</span>
+          <div className="flex items-center space-x-4">
+            <Link to="/profile"><FaRegUserCircle className="text-2xl hover:text-black transition-colors" /></Link>
+            <Link to="/cart" className="relative group">
+              <FaShoppingBag className="text-2xl group-hover:text-black transition-colors" />
+              <span className="absolute -top-2 -right-2 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
+                6
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      <nav className="flex justify-center items-center space-x-10 py-4 text-[14px] font-medium uppercase tracking-widest sticky top-0 z-50">
+        {navLinks.map((link) => (
+          <Link
+            key={link.name}
+            to={link.path}
+            className={`transition-all duration-300 pb-1 border-b-2 ${
+              isActive(link.path) ? 'text-[#e65540] border-[#e65540]' : 'text-gray-600 border-transparent hover:text-[#e65540]'}`} >
+            {link.name}
+          </Link>
+        ))}
+      </nav>
+    </header>
+  )
 }
 
 export default Navbar;

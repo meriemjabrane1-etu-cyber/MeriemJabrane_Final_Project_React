@@ -1,7 +1,9 @@
+
 import React from 'react';
 
 const ContactSection = () => {
   return (
+    
     <div className="max-w-7xl mx-auto p-6 bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         
@@ -9,7 +11,7 @@ const ContactSection = () => {
         <div className="w-full h-[400px] md:h-[500px] rounded-lg overflow-hidden shadow-md border border-gray-200">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2950.485438830156!2d-83.7145!3d42.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae193630f40d%3A0x6b4c1066060c440!2zMjMwMCBUcmF2ZXJ3b29kIERyLCBBbm4gQXJib3IsIE1JIDQ4MTA1LCBVU0E!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.0123456789!2d-7.5312345!3d33.6012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2f2cf113837f%3A0xbbf7c74fbc11b2d9!2sLionsGeek!5e0!3m2!1sen!2sma!4v1234567890"
             className="w-full h-full border-0"
             allowFullScreen=""
             loading="lazy"

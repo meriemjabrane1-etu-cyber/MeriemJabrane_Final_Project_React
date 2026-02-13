@@ -5,14 +5,14 @@ const Footer = () => {
     <footer className="bg-[#f2f2f2] pt-16 pb-8 px-6 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
         
-        {/* GET IN TOUCH */}
+    
         <div className="lg:col-span-1">
           <h4 className="text-sm font-bold tracking-widest uppercase mb-6">Get in Touch</h4>
           <p className="text-gray-500 text-sm leading-relaxed mb-6">
             Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
           </p>
           <div className="flex space-x-4 text-gray-400">
-            {/* Social Icons Placeholders */}
+
             <span className="hover:text-black cursor-pointer transition-colors text-lg">f</span>
             <span className="hover:text-black cursor-pointer transition-colors text-lg">t</span>
             <span className="hover:text-black cursor-pointer transition-colors text-lg">p</span>
@@ -20,8 +20,7 @@ const Footer = () => {
             <span className="hover:text-black cursor-pointer transition-colors text-lg">i</span>
           </div>
         </div>
-
-        {/* CATEGORIES */}
+ 
         <div>
           <h4 className="text-sm font-bold tracking-widest uppercase mb-6">Categories</h4>
           <ul className="text-gray-500 text-sm space-y-3">
@@ -32,7 +31,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* LINKS */}
+
         <div>
           <h4 className="text-sm font-bold tracking-widest uppercase mb-6">Links</h4>
           <ul className="text-gray-500 text-sm space-y-3">
@@ -42,8 +41,7 @@ const Footer = () => {
             <li className="hover:text-[#e65540] cursor-pointer transition-colors">Returns</li>
           </ul>
         </div>
-
-        {/* HELP */}
+ 
         <div>
           <h4 className="text-sm font-bold tracking-widest uppercase mb-6">Help</h4>
           <ul className="text-gray-500 text-sm space-y-3">
