@@ -45,8 +45,8 @@ const Navbar = () => {
         <div className="flex items-center space-x-6 text-gray-500">
           <span className="hidden lg:inline text-xs border-r pr-4 border-gray-200 uppercase">fashe@example.com</span>
           <div className="flex items-center space-x-4">
-            <Link to="/profile"><FaRegUserCircle className="text-2xl hover:text-black transition-colors" /></Link>
-            <Link to="/cart" className="relative group">
+            <Link to="/cont"><FaRegUserCircle className="text-2xl hover:text-black transition-colors" /></Link>
+            <Link to="/cart" className="relative group" >
               <FaShoppingBag className="text-2xl group-hover:text-black transition-colors" />
               <span className="absolute -top-2 -right-2 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
                 6
